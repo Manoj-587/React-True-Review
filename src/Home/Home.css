@@ -1,0 +1,115 @@
+/* state */
+.state{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    padding: 3%;
+}
+.counter{
+    background-color: aquamarine;
+    width: 250px;
+    padding: 5%;
+    justify-content: center;
+}
+
+
+/* props */
+.props{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    padding: 3%;
+}
+.pc{
+    width:350px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    height: 200px;
+}
+
+
+/* dynamic rendering */
+.dynamicRendering{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.form{
+    padding: 1%;
+    background-color: aquamarine;
+
+}
+
+/* CSS */
+.css{
+    padding:4%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inline{
+    padding:4% ;
+    background-color: aquamarine;
+
+}
+.internal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4%;
+    background-color: rgb(157, 255, 127);
+
+}
+
+.external1{
+    
+    padding:4%;
+    background-color: rgb(214, 255, 127);
+
+}
+.external2{
+    padding:1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#grid{
+    border: 5px solid gray;
+    width: 500px;
+    height: 500px;
+    }
+    .cell{ 
+    width: 500px;
+    height: 62.5px;
+    display:flex;
+    flex-direction: row;
+    }
+    .odd{
+    width: 62.5px;
+    height: 62.5px;
+    background-color:black;
+    }
+    .even{
+    width: 62.5px;
+    height: 62.5px;
+    background-color:white;
+    }
+
+
+/* Keys and Values */
+
+.keysAndValues{
+ 
+    display:flex;
+    justify-content: center;
+    padding:4%;
+}
+
+.keys{
+    background-color: aquamarine;
+    width:200px;
+    padding:1%;
+}

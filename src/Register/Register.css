@@ -1,0 +1,57 @@
+body{
+  background-color: rgb(232, 248, 242);
+}
+/* Container */
+.Main {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
+.picture {
+  width: 600px;
+  height: 596px;
+  background-image: url('https://wallpapers.com/images/featured/information-technology-nucb4z97b3q78mjk.jpg');
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-page {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 400px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 2px;
+  border: 1px solid #e0e0e0;
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.register-page input {
+  background-color: rgba(255, 255, 255, 0.735);
+  width: 100%;
+}
+.parent_box{
+  /* border:2px solid blue; */
+  padding-right:100px;
+  
+}
+.box{
+  height:20px;
+  /* width:80%; */
+  border-radius: 25px;  
+  /* border:2px solid red; */
+}
+.logo{
+  background-image: url('./image.png');
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  margin-bottom: 0px;
+}
