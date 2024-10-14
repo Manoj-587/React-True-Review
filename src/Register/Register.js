@@ -12,10 +12,44 @@ import XIcon from '@mui/icons-material/X';
 import { Divider } from "@mui/material";
 
 const Register = () => {
-  const Nav = useNavigate()
+  const[Name,setName] = useState("");
+  const[Password,setPassword] = useState("");
+  const[ConfirmPass,setConfirmPass] = useState("");
+  const[Email,setEmail] = useState("");
 
-  const HandleRegister = () => {
-    Nav('/')
+  const handleName = (e) => {
+    setName(e.target.value);
+  }
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  }
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  }
+  const handleConfirmPass = (e) => {
+    setConfirmPass(e.target.value);
+  }
+
+  const Nav = useNavigate()
+  const HandleRegister = (obj) => {
+    obj.preventDefault();
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if(Name === "" && Password === "" && Email === ""){
+      alert("Sorry again the input fields cannot be empty!!!")
+    }
+    else if(Name.length < 3){
+      alert("UserName must be atleast 3 characters required!!!")
+    }
+    else if(!emailPattern.test(Email)){
+      alert("Please Enter your Valid Email Address")
+    }
+    else if(Password.length <= 4){
+      alert("Password must be atleast 5 characters")
+    }
+    else if(Password !== ConfirmPass){
+      alert("Please correct your Confirm Password")
+    }
+    else Nav('/')
   }
   return (
     <div className="Main">
@@ -29,7 +63,7 @@ const Register = () => {
       <form>
         <div className="form-group">
           <label>
-            
+
               <table>
             <tr>
               <td><Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -39,7 +73,7 @@ const Register = () => {
             </tr>
             </table>
             </label>
-          <div className="parent_box"><input type="text" name="username" className="box"/></div>
+          <div className="parent_box"><input type="text" name="username" className="box" onChange={handleName}/></div>
         </div>
         <div className="form-group">
           <label>
@@ -54,7 +88,7 @@ const Register = () => {
             </table>
             </div>
             </label>
-            <div className="parent_box"><input type="email" name="email"  className="box"/></div>
+            <div className="parent_box"><input type="email" name="email"  className="box" onChange={handleEmail}/></div>
         </div>
         <div className="form-group">
           <label>
@@ -70,7 +104,7 @@ const Register = () => {
             </table>
             </div>
           </label>
-          <div className="parent_box"><input type="password"name="password" className="box"/></div>
+          <div className="parent_box"><input type="password"name="password" className="box" onChange={handlePassword}/></div>
         </div>
         <div className="form-group">
           <label>
@@ -86,7 +120,7 @@ const Register = () => {
             </table>
             </div>
           </label>
-          <div className="parent_box"><input type="password" name="confirmPassword" className="box"/></div>
+          <div className="parent_box"><input type="password" name="confirmPassword" className="box" onChange={handleConfirmPass}/></div>
         </div>
         <br></br>
        <center> <Button variant="contained" size="medium" onClick={HandleRegister}> SIGN UP</Button></center>

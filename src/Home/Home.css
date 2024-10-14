@@ -113,3 +113,16 @@
     width:200px;
     padding:1%;
 }
+
+/* Api Handling */
+
+.Api{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.API{
+    padding: 1%;
+    background-color: aquamarine;
+}

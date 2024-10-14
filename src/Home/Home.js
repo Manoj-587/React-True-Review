@@ -18,6 +18,7 @@ import DynamicRendering from './DynamicRendering';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Home.css";
+import ApiHandling from './ApiHandling';
 
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -46,22 +47,28 @@ function Home() {
   const handleLogout = () => {
     nav('/logout')
   }
-
+  
   //Props
   var property1 = "Land"
   var property2 = "House"
-
+  
   //Internal css
   const arr = ['JAVA', 'C++', 'PYTHON', 'C', 'JAVASCRIPT']
-
-  //Keys and Values
+  
+  //Keys , Values , Hookes
   const [arr1, setArr1] = useState([]);
+  const [Reset,setReset] = useState(false);
   const generateArray = () => {
     const newArr = [];
     for (let i = 73; i <= 143; i++) {
       newArr.push('727723euit' + i);
     }
     setArr1(newArr);
+    setReset(true);
+  }
+  const handleReset = () => {
+    setArr1([]);
+    setReset(false);
   }
   return (
     <div>
@@ -335,13 +342,21 @@ function Home() {
         <div className='keysAndValues'>
               <div className='keys'>
                 <center><h2>IT B</h2>
-                <button onClick={generateArray}>Generate Roll Nos</button></center>
+                <button onClick={generateArray}>Generate Roll Nos</button>
+                </center>
                 <ul>
                   {arr1.map((a, b) => (
-                    <li key={b} value={b}>{a}</li>
+                    <li value={b}>{a}</li>
                   ))}
                 </ul>
+                <center>{Reset && (<button onClick={handleReset}>reset</button>)}</center>
               </div>
+        </div>
+        <h1>6)API HANDLING</h1>
+        <div className='Api'>
+          <div className='API'>
+          <center><ApiHandling/></center>
+          </div>
         </div>
       </div>
 
