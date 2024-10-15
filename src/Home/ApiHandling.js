@@ -37,11 +37,11 @@ const ApiHandling = () => {
     <div><h1>Welcome to Api Handling!!!</h1>
     <button onClick={handleGet1}>Get1</button>
     <h2>{response1data}</h2>
-    {Reset1 && (<button onClick={handleReset1}>reset1</button>)}
+    {Reset1 && (<button onClick={handleReset1}>reset</button>)}
     <br></br>
     <button onClick={handleGet2}>Get2</button>
     <h2>{response2Data}</h2>
-    {Reset2 && (<button onClick={handleReset2}>reset2</button>)}
+    {Reset2 && (<button onClick={handleReset2}>reset</button>)}
     </div>
   )
 }
