@@ -44,7 +44,7 @@ const Loginpage = () => {
       <div className="pic"></div>
     <div className="login-page">
       <center>
-       <div className="logo"></div>
+       <div className="logo1"></div>
         <h1 style={{marginBottom:'1px',marginTop:'0px'}}>WELCOME BACK</h1>
         <p style={{marginTop:'1px'}}>Please sign in to continue</p>
         </center>

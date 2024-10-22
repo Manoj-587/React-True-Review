@@ -43,10 +43,7 @@ function Home() {
     setAnchorElUser(null);
   };
 
-  const nav = useNavigate();
-  const handleLogout = () => {
-    nav('/logout')
-  }
+ 
   
   //Props
   var property1 = "Land"

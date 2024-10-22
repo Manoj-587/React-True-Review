@@ -1,0 +1,178 @@
+/* My Profile */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .profile-container {
+    width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .profile-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    position: relative;
+  }
+  
+  .header-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .back-button, .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .avatar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+  
+  .camera-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .profile-name {
+    margin: 10px 0 5px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .status {
+    font-size: 16px;
+    color: #38A1F3;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .bio-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .bio-text {
+    padding: 10px 0;
+    color: gray;
+  }
+  
+  .details-section {
+    padding: 10px 0;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .icon {
+    width: 30px;
+  }
+  
+  .detail-value {
+    color: #007bff;
+  }
+  
+  .add-link {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .username-info, .dob-info {
+    font-size: 12px;
+    color: gray;
+    margin: 10px 0;
+  }
+  
+  .add-account {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .add-account button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-account button:hover {
+    background-color: #0056b3;
+  }
+
+  
+/* HomePage */
+
+.About {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border: 2px solid #e0e0e0;
+  color: #fff; /* White text */
+}
+
+.logo{
+  background-image: url('./image.png');
+  width: 600px;
+  background-size: cover;
+}
+.top{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+
+
+
+  
+  

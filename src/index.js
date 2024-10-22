@@ -9,15 +9,15 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import Register from './Register/Register';
-import Loginpage from './Loginpage/Loginpage';
+//importing
+import TrHome from './TrueReview/TrHome';
 import Navigator from './Navigator/Navigator';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navigator />
+    <Navigator/>
   </React.StrictMode>
 );
 
