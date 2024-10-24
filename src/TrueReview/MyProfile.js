@@ -11,13 +11,41 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import EditIcon from '@mui/icons-material/Edit';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import './TRCss.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import { useState } from 'react';
+import Dialog from '@mui/material/Dialog';
+import Alert from '@mui/material/Alert';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
 
 const MyProfile = () => {
-    const Nav = useNavigate();
-    const handleArrowBack = () => {
-        Nav('/');
-    }
+  const Nav = useNavigate();
+  const handleArrowBack = () => {
+    Nav('/');
+  }
+
+  const [isEditing, setIsEditing] = useState(false);
+  const [trName, setTrName] = useState('Skipper');
+
+  const toggleEdit = () => {
+    setIsEditing(!isEditing);
+  }
+
+  const handleNameChange = (e) => {
+    setTrName(e.target.value);
+  }
+  const handleClose = () => {
+    setIsEditing(false);  // Close the dialog without saving
+  };
+  const saveName = () => {
+    setIsEditing(false);
+  }
+
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
@@ -31,7 +59,7 @@ const MyProfile = () => {
               sx={{ mr: 2 }}
             >
               <ArrowBackIcon onClick={handleArrowBack} />
-              
+
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               My Profile
@@ -43,7 +71,7 @@ const MyProfile = () => {
               aria-label="edit"
               sx={{ mr: 2 }}
             >
-              <EditIcon />
+              <EditIcon onClick={toggleEdit} />
             </IconButton>
             <IconButton
               size="large"
@@ -75,7 +103,41 @@ const MyProfile = () => {
             </Avatar>
             <div className="camera-icon">📷</div>
           </div>
-          <h3 className="profile-name">Manoj Kumar</h3>
+          <h3 className="profile-name">Manoj Kumar T</h3>
+          Anonymous_name : {trName}
+
+          {/* Dialog for editing the name */}
+          <Dialog open={isEditing}>
+            <DialogTitle>Edit Anonymous Name</DialogTitle>
+            <DialogContent>
+              <div className='edit-container'>
+                <TextField
+                  id="input-with-icon-textfield"
+                  label="Edit Name"
+                  slotProps={{
+                    input: {
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <AccountCircle />
+                        </InputAdornment>
+                      ),
+                    },
+                  }}
+                  value={trName}
+                  onChange={handleNameChange}
+                  variant="standard" />
+                {/* text field for name editing */}
+              </div>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={handleClose} color="primary">
+                Cancel
+              </Button>
+              <Button onClick={saveName} color="primary">
+                Save
+              </Button>
+            </DialogActions>
+          </Dialog>
           <p className="status">Online</p>
         </div>
 
@@ -83,7 +145,7 @@ const MyProfile = () => {
         <div className="profile-details">
           <div className="bio-section">
             <p>Bio</p>
-            <p>70</p>
+            <p>19</p>
           </div>
           <div className="bio-text">
             <p>Any details such as age, occupation, or city. Example: 23 y.o. designer from San Francisco</p>

@@ -9,7 +9,7 @@ body {
   
   /* Container */
   .profile-container {
-    width: 400px;
+    width: 600px;
     margin: 20px auto;
     background-color: white;
     border-radius: 10px;
@@ -171,6 +171,79 @@ body {
   background-color: black;
 }
 
+
+/* actual code */
+.MainButton{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo5{
+  background-image: url('./image.png');
+  height:100px;
+  width: 100px;
+  background-size:cover;
+  margin-bottom: 0px;
+}
+.Buttons {
+  padding: 40px;
+  border: none;
+  cursor: pointer;
+}
+.subButton{
+  padding: 10px;
+  background-color: rgb(116, 245, 116);
+}
+
+.hero-section {
+  display: flex;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding: 100px ;
+  padding-left: 150px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.left{
+  padding: 50px;
+  width: 500px;
+}
+.right{
+  padding: 50px;
+  width: 500px;
+}
+.downButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.learn{
+  display: flex;
+  padding: 100px;
+  padding-left: 180px;
+  padding-top: 10px;
+}
+.subLearn{
+  padding: 50px;
+  width: 1000px;
+}
+
+.actual2{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.p1{
+  width: 300px;
+  height: 200px;
+}
+/* Add more CSS rules as needed */
 
 
 
