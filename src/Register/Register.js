@@ -49,7 +49,7 @@ const Register = () => {
     else if(Password !== ConfirmPass){
       alert("Please correct your Confirm Password")
     }
-    else Nav('/')
+    else Nav('/logout')
   }
   return (
     <div className="Main">

@@ -36,7 +36,7 @@ const Loginpage = () => {
     else if(Password.length <= 4){
       alert("Please enter a valid Password")
     }
-    else Nav2('/login');
+    else Nav2('/');
   };
 
   return (

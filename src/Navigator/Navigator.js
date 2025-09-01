@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import {Routes, Route, BrowserRouter } from 'react-router-dom';
 import MyProfile from '../TrueReview/MyProfile';
 import Categories from '../TrueReview/Categories';
 import Settings from '../TrueReview/Settings';
@@ -9,6 +9,7 @@ import TopReviews from '../TrueReview/TopReviews';
 import AddReview from '../TrueReview/AddReview';
 import TrHome from '../TrueReview/TrHome';
 import Loginpage from '../Loginpage/Loginpage';
+import Register from '../Register/Register';
 
 
 const Navigator = () =>  {
@@ -24,6 +25,7 @@ const Navigator = () =>  {
         <Route path="/top-reviews" element={<TopReviews />} />
         <Route path="/add-review" element={<AddReview />} />
         <Route path="/logout" element={<Loginpage />} />
+        <Route path="/signup" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

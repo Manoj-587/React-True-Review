@@ -481,6 +481,7 @@ export default function TrHome() {
       </div> )}
     </div>
     
+    <br></br><br></br>
     {/* actual code starts 2 */}
     <div className='actual2'>
     <Stack spacing={2} sx={{ width: 300 }}>
@@ -535,7 +536,7 @@ export default function TrHome() {
         <CardMedia
           component="img"
           height="140"
-          image="https://cdn.thewirecutter.com/wp-content/media/2024/07/laptopstopicpage-2048px-3685-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcz3PEiGbMs7JxYpdI0EjqRgEp9d--sxFAg&s"
           alt="green iguana"
         />
         <CardContent>
@@ -555,7 +556,7 @@ export default function TrHome() {
         <CardMedia
           component="img"
           height="140"
-          image="https://cdn.thewirecutter.com/wp-content/media/2024/08/lcdledtvs-2048px-hisenseu8n-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
+          image="https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617.jpg?v=1648711109"
           alt="green iguana"
         />
         <CardContent>
